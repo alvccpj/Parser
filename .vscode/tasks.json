@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o",
+                "nome_do_executavel",
+                "main.c"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
