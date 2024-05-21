@@ -5,7 +5,6 @@
 
 void yyerror(const char *s);
 int yylex(void);
-
 %}
 
 %token INT FLOAT DOUBLE CHAR BOOLEAN IF ELSE WHILE FOR SWITCH CASE DEFAULT BREAK CONTINUE RETURN STRUCT NUM_INT NUM_DEC TEXTO ID AND OR EQ NE GE LE PTR_OP
@@ -14,9 +13,13 @@ int yylex(void);
 %token COMMENT BLOCK_COMMENT
 %token VARARGS
 
+%left AND
+%left OR
+%nonassoc EQ NE GE LE '>' '<'
 %left '+' '-'
 %left '*' '/'
 %right '='
+%left PLUS_EQ MINUS_EQ TIMES_EQ DIV_EQ MOD_EQ
 
 %%
 
@@ -64,26 +67,12 @@ Comentario: COMMENT
           | BLOCK_COMMENT
           ;
 
-Expressao: Atribuicao
-         ;
-
-Atribuicao: ID '=' Expressao
-          | ID PLUS_EQ Expressao
-          | ID MINUS_EQ Expressao
-          | ID TIMES_EQ Expressao
-          | ID DIV_EQ Expressao
-          | ID MOD_EQ Expressao
-          | ID AND '=' Expressao
-          | ID OR '=' Expressao
-          ;
-
 Expressao: ExpressaoLogica
          ;
 
 ExpressaoLogica: ExpressaoRelacional
                | ExpressaoLogica AND ExpressaoRelacional
                | ExpressaoLogica OR ExpressaoRelacional
-               | '!' ExpressaoRelacional
                ;
 
 ExpressaoRelacional: ExpressaoAritmetica

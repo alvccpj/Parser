@@ -76,7 +76,7 @@
 void yyerror(const char *s);
 int yylex(void);
 
-#line 80 "y.tab.c"
+#line 80 "example.tab.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -99,125 +99,7 @@ int yylex(void);
 #  endif
 # endif
 
-/* Use api.header.include to #include this header
-   instead of duplicating it here.  */
-#ifndef YY_YY_Y_TAB_H_INCLUDED
-# define YY_YY_Y_TAB_H_INCLUDED
-/* Debug traces.  */
-#ifndef YYDEBUG
-# define YYDEBUG 0
-#endif
-#if YYDEBUG
-extern int yydebug;
-#endif
-
-/* Token kinds.  */
-#ifndef YYTOKENTYPE
-# define YYTOKENTYPE
-  enum yytokentype
-  {
-    YYEMPTY = -2,
-    YYEOF = 0,                     /* "end of file"  */
-    YYerror = 256,                 /* error  */
-    YYUNDEF = 257,                 /* "invalid token"  */
-    INT = 258,                     /* INT  */
-    FLOAT = 259,                   /* FLOAT  */
-    DOUBLE = 260,                  /* DOUBLE  */
-    CHAR = 261,                    /* CHAR  */
-    BOOLEAN = 262,                 /* BOOLEAN  */
-    IF = 263,                      /* IF  */
-    ELSE = 264,                    /* ELSE  */
-    WHILE = 265,                   /* WHILE  */
-    FOR = 266,                     /* FOR  */
-    SWITCH = 267,                  /* SWITCH  */
-    CASE = 268,                    /* CASE  */
-    DEFAULT = 269,                 /* DEFAULT  */
-    BREAK = 270,                   /* BREAK  */
-    CONTINUE = 271,                /* CONTINUE  */
-    RETURN = 272,                  /* RETURN  */
-    STRUCT = 273,                  /* STRUCT  */
-    NUM_INT = 274,                 /* NUM_INT  */
-    NUM_DEC = 275,                 /* NUM_DEC  */
-    TEXTO = 276,                   /* TEXTO  */
-    ID = 277,                      /* ID  */
-    AND = 278,                     /* AND  */
-    OR = 279,                      /* OR  */
-    EQ = 280,                      /* EQ  */
-    NE = 281,                      /* NE  */
-    GE = 282,                      /* GE  */
-    LE = 283,                      /* LE  */
-    PTR_OP = 284,                  /* PTR_OP  */
-    PLUS_EQ = 285,                 /* PLUS_EQ  */
-    MINUS_EQ = 286,                /* MINUS_EQ  */
-    TIMES_EQ = 287,                /* TIMES_EQ  */
-    DIV_EQ = 288,                  /* DIV_EQ  */
-    MOD_EQ = 289,                  /* MOD_EQ  */
-    PLUS_PLUS = 290,               /* PLUS_PLUS  */
-    MINUS_MINUS = 291,             /* MINUS_MINUS  */
-    COMMENT = 292,                 /* COMMENT  */
-    BLOCK_COMMENT = 293,           /* BLOCK_COMMENT  */
-    VARARGS = 294                  /* VARARGS  */
-  };
-  typedef enum yytokentype yytoken_kind_t;
-#endif
-/* Token kinds.  */
-#define YYEMPTY -2
-#define YYEOF 0
-#define YYerror 256
-#define YYUNDEF 257
-#define INT 258
-#define FLOAT 259
-#define DOUBLE 260
-#define CHAR 261
-#define BOOLEAN 262
-#define IF 263
-#define ELSE 264
-#define WHILE 265
-#define FOR 266
-#define SWITCH 267
-#define CASE 268
-#define DEFAULT 269
-#define BREAK 270
-#define CONTINUE 271
-#define RETURN 272
-#define STRUCT 273
-#define NUM_INT 274
-#define NUM_DEC 275
-#define TEXTO 276
-#define ID 277
-#define AND 278
-#define OR 279
-#define EQ 280
-#define NE 281
-#define GE 282
-#define LE 283
-#define PTR_OP 284
-#define PLUS_EQ 285
-#define MINUS_EQ 286
-#define TIMES_EQ 287
-#define DIV_EQ 288
-#define MOD_EQ 289
-#define PLUS_PLUS 290
-#define MINUS_MINUS 291
-#define COMMENT 292
-#define BLOCK_COMMENT 293
-#define VARARGS 294
-
-/* Value type.  */
-#if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef int YYSTYPE;
-# define YYSTYPE_IS_TRIVIAL 1
-# define YYSTYPE_IS_DECLARED 1
-#endif
-
-
-extern YYSTYPE yylval;
-
-
-int yyparse (void);
-
-
-#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
+#include "example.tab.h"
 /* Symbol kind.  */
 enum yysymbol_kind_t
 {
@@ -1334,7 +1216,7 @@ yyreduce:
   switch (yyn)
     {
 
-#line 1338 "y.tab.c"
+#line 1220 "example.tab.c"
 
       default: break;
     }

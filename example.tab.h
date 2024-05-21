@@ -35,8 +35,8 @@
    especially those whose name start with YY_ or yy_.  They are
    private implementation details that can be changed or removed.  */
 
-#ifndef YY_YY_Y_TAB_H_INCLUDED
-# define YY_YY_Y_TAB_H_INCLUDED
+#ifndef YY_YY_EXAMPLE_TAB_H_INCLUDED
+# define YY_YY_EXAMPLE_TAB_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -94,48 +94,6 @@ extern int yydebug;
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
-/* Token kinds.  */
-#define YYEMPTY -2
-#define YYEOF 0
-#define YYerror 256
-#define YYUNDEF 257
-#define INT 258
-#define FLOAT 259
-#define DOUBLE 260
-#define CHAR 261
-#define BOOLEAN 262
-#define IF 263
-#define ELSE 264
-#define WHILE 265
-#define FOR 266
-#define SWITCH 267
-#define CASE 268
-#define DEFAULT 269
-#define BREAK 270
-#define CONTINUE 271
-#define RETURN 272
-#define STRUCT 273
-#define NUM_INT 274
-#define NUM_DEC 275
-#define TEXTO 276
-#define ID 277
-#define AND 278
-#define OR 279
-#define EQ 280
-#define NE 281
-#define GE 282
-#define LE 283
-#define PTR_OP 284
-#define PLUS_EQ 285
-#define MINUS_EQ 286
-#define TIMES_EQ 287
-#define DIV_EQ 288
-#define MOD_EQ 289
-#define PLUS_PLUS 290
-#define MINUS_MINUS 291
-#define COMMENT 292
-#define BLOCK_COMMENT 293
-#define VARARGS 294
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -151,4 +109,4 @@ extern YYSTYPE yylval;
 int yyparse (void);
 
 
-#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
+#endif /* !YY_YY_EXAMPLE_TAB_H_INCLUDED  */
