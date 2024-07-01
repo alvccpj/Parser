@@ -1,4 +1,4 @@
-# Parser
+# Parser (O código está na branch main)
 
 Este repositório contém um projeto de Parser desenvolvido utilizando Ubuntu e YACC (Yet Another Compiler-Compiler).
 
